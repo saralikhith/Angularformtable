@@ -10,11 +10,13 @@ import {user} from './model/user.model';
 export class AppComponent {
 
   data:user={username:"",dob:" ",email:" "}
- getData(){
-
-
+ tostore:user[]=[];
  
-   console.log(this.data)
+  getData(){
+
+    console.log(this.data)
+    this.tostore.push(this.data)
+
 
    this.data={username:"",dob:" ",email:" "}
  }

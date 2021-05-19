@@ -1,12 +1,12 @@
 <!-- show items with the help of accordian -->
 <!-- accordian is the combination cart and collapse -->
-
-<!-- <div class="mx-auto mt-3 " style="max-width: 800px;margin: auto;">
+<!-- 
+<div class="mx-auto mt-3 " style="max-width: 800px;margin: auto;">
  
   <h1 class="text-center hed">List Of Users</h1>
   
 
-    <form #ref="ngForm" (ngSubmit)="getData(ref)">
+    <form #ref="ngForm" (ngSubmit)="getData()">
 
      
       <div>
@@ -41,12 +41,13 @@
     <div>
 
     </div>
-    <div *ngIf="data.length==0 ">
+    <div *ngIf="">
                <h2 class="text-center text-primary">users not found</h2>
-    </div>
+     </div>  -->
 
-      <!-- no of accordian item is proportional to length of array -->
-<!-- <div class="accordion" id="accordionExample">
+       <!-- no of accordian item is proportional to length of array  -->
+<!--        
+ <div class="accordion" id="accordionExample">
 
   <div class="accordion-item" *ngFor="let v of data;let ind=index" >
     <h2 class="accordion-header" >
@@ -65,20 +66,20 @@
           
       </div>
     </div>
-  </div>
+  </div> 
 
   
  
  
-</div> --> 
+ </div>  -->
 
 
 <div class="mx-auto mt-3 " style="max-width: 800px;margin: auto;">
  
-  <h1 class="text-center hed">List Of Users</h1>
-  
+  <h1 class="text-center hed">List Of Users</h1> 
+
 <!-- here we are not sending object so ng form is not required -->
-    <form  (ngSubmit)="getData()">
+     <form  (ngSubmit)="getData()">
 
      
       <div>
@@ -110,11 +111,25 @@
     </div> 
     <hr>
 
-    
+    <table class="table">
+      <thead>
+        <th>Username</th>
+        <th>date of birth</th>
+        <th>email</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of tostore">
+          <td >{{v.username}}</td>
+          <td >{{v.dob}}</td>
+          <td >{{v.email}}</td>
+        </tr>
+      </tbody>
+
+    </table>
 
   
  
  
 </div>
-
+ 
 
