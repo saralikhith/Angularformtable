@@ -110,8 +110,13 @@
      
     </div> 
     <hr>
+    <div *ngIf="tostore.length==0" class="text-center text-warning">
+      <h3>no items registerd</h3>
 
-    <table class="table">
+    </div>
+    <div *ngIf="tostore.length!=0">
+
+    <table class="table text-center">
       <thead>
         <th>Username</th>
         <th>date of birth</th>
@@ -127,7 +132,7 @@
 
     </table>
 
-  
+  </div>
  
  
 </div>
