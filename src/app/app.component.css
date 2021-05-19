@@ -1,0 +1,36 @@
+
+.hed{
+    background-color: rgb(24, 88, 24);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    
+}
+
+.form-control{
+   box-shadow:none !important;
+    border:none;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    width: 100%;
+   margin-bottom: 20px;
+    
+
+}
+
+.btn{
+    background-color: rgb(88, 16, 223);
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+    
+    cursor: pointer;
+    color: white;
+}
+.head{
+    border-radius: 5px;
+    max-width: 75%;
+    display: block;
+    margin: auto;
+    color: rgb(222, 241, 240);
+}
